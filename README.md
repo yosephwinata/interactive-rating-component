@@ -15,8 +15,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/yosephwinata/interactive-rating-component](https://github.com/yosephwinata/interactive-rating-component)
+- Live Site URL: [https://interactive-rating-component-rosy-eight.vercel.app/](https://interactive-rating-component-rosy-eight.vercel.app/)
 
 ## My process
 
