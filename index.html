@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/queries.css" />
+
+    <script defer src="script.js"></script>
+
+    <title>Interactive rating component</title>
+  </head>
+  <body>
+    <form>
+      <article class="card card-rating">
+        <div class="top-container">
+          <div class="star-container">
+            <img
+              class="star-icon"
+              src="/images/icon-star.svg"
+              alt="Star Icon"
+            />
+          </div>
+          <h1 class="heading-primary heading-review">How did we do?</h1>
+          <p class="body body-review">
+            Please let us know how we did with your support request. All
+            feedback is appreciated to help us improve our offering!
+          </p>
+          <ol class="rating-options">
+            <li class="rating-option" data-score="1">1</li>
+            <li class="rating-option" data-score="2">2</li>
+            <li class="rating-option" data-score="3">3</li>
+            <li class="rating-option" data-score="4">4</li>
+            <li class="rating-option" data-score="5">5</li>
+          </ol>
+        </div>
+        <button type="submit" class="btn-submit">Submit</button>
+      </article>
+    </form>
+
+    <!-- Tips for next project: Use radio buttons (input fields) instead of
+    <li>
+      elements
+      <form>
+        <div class="rating-options">
+          <input type="radio" name="rating" id="rating1" value="1" /><label
+            for="rating1"
+            >1</label
+          >
+          <input type="radio" name="rating" id="rating2" value="2" /><label
+            for="rating2"
+            >2</label
+          >
+          <input type="radio" name="rating" id="rating3" value="3" /><label
+            for="rating3"
+            >3</label
+          >
+          <input type="radio" name="rating" id="rating4" value="4" /><label
+            for="rating4"
+            >4</label
+          >
+          <input type="radio" name="rating" id="rating5" value="5" /><label
+            for="rating5"
+            >5</label
+          >
+        </div>
+        <button type="submit" class="btn-submit">Submit</button>
+      </form> -->
+
+      <!-- Thank you card -->
+      <article class="card card-thank-you hidden">
+        <img
+          class="thank-you-illustration"
+          src="/images/illustration-thank-you.svg"
+          alt="Thank you illustration"
+        />
+        <p class="heading-medium rating-confirmation">
+          You selected <span id="user-rating"></span> out of 5
+        </p>
+        <h1 class="heading-primary thank-you-title">Thank you!</h1>
+        <p class="body body-thank-you">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+      </article>
+    </li>
+  </body>
+</html>

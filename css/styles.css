@@ -1,0 +1,159 @@
+:root {
+  --orange: hsl(25, 97%, 53%);
+  --pure-white: hsl(0, 0%, 100%);
+  --light-gray: hsl(217, 12%, 63%);
+  --medium-gray: hsl(216, 12%, 54%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+
+  --black-gradient: hsl(215, 20%, 17%);
+
+  --regular-weight: 400;
+  --bold-weight: 700;
+}
+
+html,
+body {
+  min-height: 100vh;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  background-color: var(--very-dark-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 41.2rem;
+  height: 41.6rem;
+  background-color: var(--black-gradient);
+  border-radius: 30px;
+}
+
+.card-rating {
+  padding: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.star-container {
+  width: 4.8rem;
+  height: 4.8rem;
+  background-color: var(--dark-blue);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.star-icon {
+}
+
+.heading-review {
+}
+
+.body-review {
+  margin-bottom: 2.4rem;
+}
+
+.rating-options {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rating-option {
+  width: 5.1rem;
+  height: 5.1rem;
+  border-radius: 50%;
+  background-color: var(--dark-blue);
+  font-size: 1.6rem;
+  font-weight: var(--bold-weight);
+  letter-spacing: 0.2px;
+  color: var(--medium-gray);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .rating-option:hover,
+.rating-option:active { */
+.rating-option:hover {
+  color: var(--pure-white);
+  background-color: var(--orange);
+}
+
+.rating-option.clicked {
+  color: var(--pure-white);
+  background-color: var(--medium-gray);
+}
+
+.btn-submit {
+  width: 100%;
+  height: 4.5rem;
+  color: var(--pure-white);
+  background-color: var(--orange);
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 22.5px;
+  cursor: pointer;
+}
+
+.btn-submit:hover,
+.btn-submit:active {
+  color: var(--orange);
+  background-color: var(--pure-white);
+}
+
+/* Utilities */
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+.card-thank-you {
+  text-align: center;
+  padding: 4.5rem 3.2rem;
+}
+
+.thank-you-illustration {
+  width: 16.2rem;
+  height: 10.8rem;
+  margin: 0 auto 3.2rem auto;
+}
+
+.rating-confirmation {
+  margin-bottom: 3.6rem;
+}
+
+.thank-you-title {
+  margin-bottom: 1.5rem;
+}
+
+/* General */
+.heading-primary {
+  color: var(--pure-white);
+  font-size: 2.8rem;
+  font-weight: var(--bold-weight);
+  margin-bottom: 0.7rem;
+}
+
+.heading-medium {
+  font-size: 1.5rem;
+  color: var(--orange);
+}
+
+.body {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  color: var(--light-gray);
+}
